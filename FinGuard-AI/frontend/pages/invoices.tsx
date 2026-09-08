@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import apiClient from '@/lib/api';
 
 export default function InvoicesDashboard() {
-  const [invoices, setInvoices] = useState([]);
+  const [invoices, setInvoices] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [statusFilter, setStatusFilter] = useState(null);
+  const [statusFilter, setStatusFilter] = useState<string | null>(null);
 
   useEffect(() => {
     fetchInvoices();
