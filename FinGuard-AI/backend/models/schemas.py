@@ -88,7 +88,7 @@ class AuditLogResponse(BaseModel):
 
     class Config:
         from_attributes = True
-
+        protected_namespaces = ()   # ye line add karo
 
 # Anomaly Detection Response
 class AnomalyDetectionResult(BaseModel):
