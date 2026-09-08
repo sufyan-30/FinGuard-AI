@@ -4,7 +4,7 @@ import apiClient from '@/lib/api';
 export default function InvoicesDashboard() {
   const [invoices, setInvoices] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   const [statusFilter, setStatusFilter] = useState(null);
 
   useEffect(() => {
