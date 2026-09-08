@@ -12,7 +12,6 @@ asyncpg==0.29.0
 alembic==1.12.1
 
 # Redis & Caching
-aioredis==2.0.1
 redis==5.0.1
 
 # Data Processing
