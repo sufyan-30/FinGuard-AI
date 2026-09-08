@@ -1,4 +1,4 @@
-"""API service client library"""
+// API service client library
 
 import axios, { AxiosInstance } from 'axios';
 
