@@ -1,15 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
-  @apply border-border;
+  @apply border-gray-200;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
-  @apply bg-background text-foreground;
+  @apply bg-white text-gray-900;
 }
