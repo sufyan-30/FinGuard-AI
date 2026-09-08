@@ -4,7 +4,7 @@ import apiClient from '@/lib/api';
 export default function AuditLogs() {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   const [vendorFilter, setVendorFilter] = useState(null);
 
   useEffect(() => {
