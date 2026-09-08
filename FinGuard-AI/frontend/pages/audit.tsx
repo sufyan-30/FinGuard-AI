@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import apiClient from '@/lib/api';
 
 export default function AuditLogs() {
-  const [logs, setLogs] = useState([]);
+  const [logs, setLogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [vendorFilter, setVendorFilter] = useState(null);
