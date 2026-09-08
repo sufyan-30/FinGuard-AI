@@ -3,7 +3,13 @@ import Link from 'next/link';
 import apiClient from '@/lib/api';
 
 export default function Dashboard() {
-  const [health, setHealth] = useState(null);
+  interface HealthStatus {
+  status?: string;
+  db?: string;
+  redis?: string;
+}
+
+const [health, setHealth] = useState<HealthStatus | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
