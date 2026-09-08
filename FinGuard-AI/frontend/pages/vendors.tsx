@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import apiClient from '@/lib/api';
 
 export default function VendorDashboard() {
-  const [vendors, setVendors] = useState([]);
+  const [vendors, setVendors] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -36,7 +36,7 @@ export default function VendorDashboard() {
     }
   };
 
-  const handleDeleteVendor = async (id) => {
+  const handleDeleteVendor = async (id: number) => {
     if (!confirm('Are you sure?')) return;
 
     try {
