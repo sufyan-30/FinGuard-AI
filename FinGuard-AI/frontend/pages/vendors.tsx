@@ -4,7 +4,7 @@ import apiClient from '@/lib/api';
 export default function VendorDashboard() {
   const [vendors, setVendors] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetchVendors();
