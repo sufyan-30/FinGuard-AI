@@ -2,7 +2,7 @@
 
 import os
 import logging
-from aioredis import Redis, from_url
+from redis.asyncio import Redis, from_url
 from aioredis.connection import ConnectionPool
 
 logger = logging.getLogger(__name__)
